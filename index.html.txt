@@ -1,0 +1,212 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okieted OKC Appliance Parts</title>
+    <style>
+        :root {
+            --primary-color: #0053a0; /* eBay Blue */
+            --secondary-color: #e53238; /* eBay Red */
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #003b75);
+            color: white;
+            text-align: center;
+            padding: 3.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 0.7rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .about-section {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .address-box {
+            background-color: #f1f7fc;
+            border-left: 5px solid var(--primary-color);
+            padding: 1.2rem;
+            margin: 1.5rem auto;
+            max-width: 500px;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .address-box p {
+            margin: 0.3rem 0;
+            font-weight: 500;
+        }
+
+        .phone-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+
+        .ebay-cta {
+            display: inline-block;
+            background-color: #86b817; /* Vibrant eBay Green */
+            color: white;
+            text-decoration: none;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            margin: 1.5rem 0 0.5rem;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .ebay-cta:hover {
+            transform: scale(1.05);
+            background-color: #729c14;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin: 3.5rem 0 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item-desc {
+            padding: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 5rem;
+            background-color: #222;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Okieted OKC Appliance Parts</h1>
+        <p>Your trusted source for reliable, high-quality appliance components.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to Okieted OKC Appliance Parts. We specialize in providing top-tier, reliable replacement parts to get your household appliances running smoothly again. With 100% positive feedback and over 54,000 items sold, we are committed to accuracy, competitive pricing, and fast shipping. View our full live inventory, check specific part compatibility, and complete your purchase securely on our official eBay store!</p>
+            
+            <!-- Custom Contact & Location Box -->
+            <div class="address-box">
+                <p style="font-weight: bold; color: var(--primary-color); font-size: 1.1rem; margin-bottom: 0.5rem;">📍 Contact & Location</p>
+                <p style="font-size: 1.1rem; color: #222; font-weight: bold;">Okieted OKC Appliance Parts</p>
+                <p style="color: #555;">3541 NW 10th St</p>
+                <p style="color: #555; margin-bottom: 0.8rem;">Oklahoma City, OK 73107</p>
+                
+                <!-- Updated phone link -->
+                <p style="color: #222; border-top: 1px solid #ddd; padding-top: 0.8rem;">
+                    📞 Phone: <a href="tel:3145985119" class="phone-link">(314) 598-5119</a>
+                </p>
+            </div>
+            
+            <a href="https://ebay.com" target="_blank" class="ebay-cta">🛍️ Shop Our eBay Storefront</a>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <h2 class="gallery-title">Browse Our Top Categories</h2>
+        <section class="gallery">
+            
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="https://postimg.cc" alt="Refrigerator and Freezer Parts">
+                <div class="gallery-item-desc">Refrigerator & Freezer Parts</div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="https://postimg.cc" alt="Washer and Dryer Parts">
+                <div class="gallery-item-desc">Washer & Dryer Parts</div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="https://postimg.cc" alt="Range, Oven, and Cooktop Parts">
+                <div class="gallery-item-desc">Range, Oven & Cooktop Parts</div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Okieted OKC Appliance Parts. All Rights Reserved. Officially selling via eBay.</p>
+    </footer>
+
+</body>
+</html>
